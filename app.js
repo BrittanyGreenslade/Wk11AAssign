@@ -1,14 +1,15 @@
 function titleHovered(e) {
   console.log(e);
   titleTag.style.fontSize = `50px`;
+  titleTag.style.color = `blue`;
 }
 function beenClikd(e) {
   console.log(e);
   titleTag.style.background = `chartreuse`;
 }
-function spcKey(eventDetails) {
-  console.log(eventDetails);
-  if (eventDetails.code === `Space`) {
+function spcKey(e) {
+  console.log(e);
+  if (e.code === `Space`) {
     document.body.style.background = `hotpink`;
   }
 }
